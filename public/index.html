@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Personal Expense Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Personal Expense Dashboard</h1>
+
+  <div class="box">
+    <h2>Add Expense</h2>
+
+    <input id="amount" type="number" placeholder="Amount (Eg: 50)">
+    <input id="category" type="text" placeholder="Category (Eg: Food)">
+    <input id="note" type="text" placeholder="Note (Eg: Tea)">
+
+    <button onclick="addExpense()">Add Expense</button>
+    <button onclick="downloadCSV()">Export CSV</button>
+  </div>
+
+  <div class="box">
+    <h2>All Expenses</h2>
+    <p id="total">Total: ₹0</p>
+
+    <ul id="list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
